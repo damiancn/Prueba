@@ -10,5 +10,10 @@ La mitología griega es el conjunto de mitos y leyendas pertenecientes a la cult
 La mitología griega aparece explícitamente en umitos y leyendas na extensa colección de relatos e implícitamente en artes figurativas tales como cerámica pintada y ofrendas votivas. Los mitos griegos intentan explicar los orígenes del mundo y detallan las vidas y aventuras de una amplia variedad de dioses, héroes y otras criaturas mitológicas. Estos relatos fueron originalmente difundidos en una tradición poética oral, si bien actualmente los mitos se conocen principalmente gracias a la literatura griega.
 
 Recuerda que cada archivo de tu directorio de trabajo puede estar en uno de estos dos estados: bajo seguimiento (tracked), o sin seguimiento (untracked). Los archivos bajo seguimiento son aquellos que existían en la última instantánea; pueden estar sin modificaciones, modificados, o preparados.
-Los archivos sin seguimiento son todos los demás —cualquier archivo de tu directorio que no estuviese en tu última instantánea ni está en tu área de preparación—. La primera vez que clonas un repositorio, todos tus archivos estarán bajo seguimiento y sin modificaciones, ya que los acabas de copiar y no has modificado nada.
+Los archivos sin seguimiento son todos los demás —cualquier archivo de tu directorio que no estuviese en tu última instantánea ni está en tu área de preparación—. La ultima vez que clonas un repositorio, todos tus archivos estarán bajo seguimiento y sin modificaciones, ya que los acabas de copiar y no has modificado nada.
 
+
+En git existen dos formas que nos permiten unir ramas, git merge y git rebase. La forma mas conocida es git merge, la cual realiza una fusión a tres bandas entre las dos últimas instantáneas de cada rama y el ancestro común a ambas, creando un nuevo commit con los cambios mezclados.
+
+Git rebase básicamente lo que hace es recopilar uno a uno los cambios confirmados en una rama, y reaplicarlos sobre otra. Utilizar rebase nos puede ayudar a evitar conflictos siempre que se aplique sobre commits que están en local
+ /y no han sido subidos a ningún repositorio remoto. Si no tienen cuidado con esto último/ y algún compañero utiliza cambios afectados, seguro que tendrá problemas ya que este tipo de conflictos normalmente son difíciles de reparar.
