@@ -7,9 +7,9 @@ La cosmología de la mitología nórdica incluye un fuerte componente de dualida
 
 La mitología griega es el conjunto de mitos y leyendas pertenecientes a la cultura de Antigua Grecia, que tratan de sus dioses y héroes, la naturaleza del mundo, los orígenes y el significado de sus propios cultos y prácticas rituales. Formaban parte de la religión de la Antigua Grecia, que tenía como objeto de culto básicamente a los dioses olímpicos. Los investigadores modernos recurren a los mitos y los estudian en un intento por arrojar luz sobre las instituciones religiosas y políticas de la antigua Grecia y su civilización, así como para entender mejor la naturaleza de la propia creación de los mitos.
 
-La mitología griega aparece explícitamente en umitos y leyendas na extensa colección de relatos e implícitamente en artes figurativas tales como cerámica pintada y ofrendas votivas. Los mitos griegos intentan explicar los orígenes del mundo y detallan las vidas y aventuras de una amplia variedad de dioses, héroes y otras criaturas mitológicas. Estos relatos fueron originalmente difundidos en una tradición poética oral, si bien actualmente los mitos se conocen principalmente gracias a la literatura griega.
+La mitología griega aparece explícitamente en umitos y leyendas na extensa colección de relatos e implícitamente en artes figurativas tales como cerámica pintada y ofrendas votivas. Los mitos griegos intentan explicar los orígenes del mundo y detallan las vidas y aventuras de una amplia variedad de dioses, héroes y otras criaturas. Estos relatos fueron originalmente difundidos en una tradición poética oral, si bien actualmente los mitos se conocen principalmente gracias a la literatura griega.
 
-Recuerda que cada archivo de tu directorio de trabajo puede estar en uno de estos dos estados: bajo seguimiento (tracked), o sin seguimiento (untracked). Los archivos bajo seguimiento son aquellos que existían en la última instantánea; pueden estar sin modificaciones, modificados, o preparados.
+Recuerda que cada archivo de tu directorio de trabajo puede estar en uno de estos dos estados: bajo seguimiento [tracked] , o sin seguimiento (untracked). Los archivos bajo seguimiento son aquellos que existían en la última instantánea; pueden estar sin modificaciones, modificados, o preparados.
 Los archivos sin seguimiento son todos los demás —cualquier archivo de tu directorio que no estuviese en tu última instantánea ni está en tu área de preparación—. La ultima vez que clonas un repositorio, todos tus archivos estarán bajo seguimiento y sin modificaciones, ya que los acabas de copiar y no has modificado nada.
 
 
@@ -17,3 +17,6 @@ En git existen dos formas que nos permiten unir ramas, git merge y git rebase. L
 
 Git rebase básicamente lo que hace es recopilar uno a uno los cambios confirmados en una rama, y reaplicarlos sobre otra. Utilizar rebase nos puede ayudar a evitar conflictos siempre que se aplique sobre commits que están en local
  /y no han sido subidos a ningún repositorio remoto. Si no tienen cuidado con esto último/ y algún compañero utiliza cambios afectados, seguro que tendrá problemas ya que este tipo de conflictos normalmente son difíciles de reparar.
+
+
+Cuando creas una confirmación con el comando git commit, Git realiza sumas de control de cada subcarpeta (en el ejemplo, solamente tenemos la carpeta principal del proyecto), y las guarda como objetos árbol en el repositorio Git. Después, Git crea un objeto de confirmación con los metadatos pertinentes y un apuntador al objeto árbol raiz del proyecto. Esto permitirá poder regenerar posteriormente dicha instantánea cuando sea necesario
